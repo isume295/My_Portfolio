@@ -83,7 +83,7 @@
 
 @media (min-width: 375px) {
   .heroMainContainer {
-    width: 80%;
+    background-size: contain;
   }
 
   .contentContainer {
