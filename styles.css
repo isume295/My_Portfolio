@@ -40,6 +40,8 @@
   width: 80%;
   margin-left: 2rem;
   padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .headingTxt {
@@ -48,6 +50,7 @@
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
+  padding: 10px 0;
 }
 
 .paragraph {
@@ -56,6 +59,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #344563;
+  padding: 10px 0;
 }
 
 .connectMeLink {
