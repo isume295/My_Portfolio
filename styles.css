@@ -33,7 +33,7 @@
   width: 100%;
   background-image: url(mobile\ bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .contentContainer {
