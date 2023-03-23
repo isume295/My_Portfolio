@@ -92,7 +92,11 @@
 }
 
 @media (min-width: 768px) {
-  .contentContainer {
+    .contentContainer {
     width: 80%;
+  }
+  
+    .heroMainContainer {
+    background-size: contain;
   }
 }
