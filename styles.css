@@ -77,3 +77,19 @@
 .socialMediaIcon:hover {
   fill: rgb(96, 112, 255);
 }
+
+@media (min-width: 375px) {
+  .heroMainContainer {
+    background-size: cover;
+  }
+
+  .contentContainer {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contentContainer {
+    width: 80%;
+  }
+}
