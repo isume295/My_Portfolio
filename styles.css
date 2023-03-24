@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f7f7f9;
+}
+
 .headerContainer {
   display: flex;
   width: 100%;
   height: 58px;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 
 .logo {
@@ -29,8 +34,9 @@
 
 .heroMainContainer {
   margin: 0;
-  height: 90%;
+  height: 75%;
   width: 100%;
+  background-color: rgb(255, 255, 255);
   background-image: url(mobile\ bg.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -81,9 +87,139 @@
   fill: rgb(96, 112, 255);
 }
 
+.worksGridContainer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6rem;
+  border-radius: 10px;
+  margin: 6rem 10px;
+  padding: 10px;
+}
+
+.worksFlexContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid rgb(223, 225, 230);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.txtWrapper {
+  width: 80%;
+}
+
+.workImgContainer img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.workDetailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.projecTitle {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: rgb(23, 43, 77);
+}
+
+.canopyContainer {
+  display: flex;
+  gap: 1.5rem;
+  padding: 3px 0;
+}
+
+.canopyContainer h4 {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.projectOrderedList {
+  display: flex;
+  gap: 1.5rem;
+  list-style: disc;
+  color: rgb(122, 134, 154);
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.projectDetail {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.projectUnorderdList {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  margin: 0;
+}
+
+.projectUnorderdList li {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: rgb(235, 235, 255);
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: rgb(96, 112, 255);
+}
+
+.btnWrapper {
+  padding: 5px 0;
+}
+
+.btn-project {
+  border: 1px solid rgb(96, 112, 255);
+  border-radius: 8px;
+  padding: 12px;
+  color: rgb(96, 112, 255);
+  background-color: #fff;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.btn-project:hover {
+  background-color: #6070ff;
+  color: white;
+  transition: all ease 1s;
+}
+
+.btn-project:active {
+  background-color: hsl(235, 72%, 48%);
+  color: white;
+  transition: all ease 1s;
+}
+
 @media (min-width: 375px) {
   .heroMainContainer {
-    background-size: contain;
+    background-size: cover;
   }
 
   .contentContainer {
@@ -98,5 +234,6 @@
 
   .heroMainContainer {
     background-size: cover;
+    height: 100%;
   }
 }
