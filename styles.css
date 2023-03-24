@@ -37,7 +37,7 @@
 }
 
 .contentContainer {
-  width: 80%;
+  width: 60%;
   margin-left: 2rem;
   padding-top: 6rem;
   display: flex;
@@ -87,7 +87,7 @@
   }
 
   .contentContainer {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -97,6 +97,6 @@
   }
 
   .heroMainContainer {
-    background-size: contain;
+    background-size: cover;
   }
 }
