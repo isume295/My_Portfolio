@@ -229,7 +229,7 @@ body {
   background-color: white;
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 5rem;
 }
 
 .mainList {
@@ -284,6 +284,77 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+
+.contactMeMainContainer {
+  background-color: rgb(96, 112, 255);
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 80px 80px;
+  background-image: url(contact\ mg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 100%;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 20px;
+}
+
+.contactContainer h1 {
+  padding-top: 5rem;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contactContainer p {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(235, 235, 255);
+}
+
+.contactContainer input {
+  width: 100%;
+  padding: 13px 20px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(207, 216, 220);
+  border-radius: 8px;
+  color: white;
+}
+
+.contactContainer textarea {
+  width: 100%;
+  height: 175px;
+  padding: 13px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(207, 216, 220);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  resize: none;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contactContainer textarea:focus input:focus {
+  outline: none;
+  border-color: rgb(127, 140, 255);
 }
 
 @media (min-width: 375px) {
