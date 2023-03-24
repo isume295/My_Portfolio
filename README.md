@@ -23,8 +23,8 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [:memo: License](#license)
 
-# :book: [Hello_Microverse] <a name="about-project"></a>
-*[Hello_Microverse]* is the a simple Html and Css project with Microverse linter configuration.
+# :book: [My_Portfolio] <a name="about-project"></a>
+*[My_Protfolio]* is the a simple Html and Css portfolio project with Microverse linter configuration.
 
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
 -HTML
@@ -52,6 +52,12 @@
 - *[Follow HTML and CSS best practice]*
 - *[Display Header]*
 - *[Display Hero page]*
+- *[Display Works page]*
+- *[Display About me page]*
+- *[Display Contact me page]*
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,6 +132,9 @@ https://isume295.github.io/My_Portfolio/
 - [ ] *[Animations]*
 - [ ] *[Body-section]*
 - [ ] *[Footer Section]*
+- [ ] *[DesktopVersion]*
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
