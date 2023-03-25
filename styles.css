@@ -82,13 +82,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  text-decoration: none;
 }
 
 .socialMediaContainer {
   margin: 1.2rem 0;
   display: flex;
   gap: 1.5rem;
+  list-style-type: none;
 }
 
 .socialMediaIcon:hover {
@@ -309,7 +309,7 @@ body {
   padding: 0 20px;
 }
 
-.contactContainer h1 {
+.contactContainer h2 {
   padding-top: 5rem;
   font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
   font-style: normal;
