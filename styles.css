@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f7f7f9;
+}
+
 .headerContainer {
   display: flex;
   width: 100%;
   height: 58px;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
 }
 
 .logo {
@@ -29,8 +34,9 @@
 
 .heroMainContainer {
   margin: 0;
-  height: 90%;
+  height: 75%;
   width: 100%;
+  background-color: rgb(255, 255, 255);
   background-image: url(mobile\ bg.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -38,6 +44,14 @@
 
 .contentContainer {
   width: 60%;
+  margin-left: 2rem;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutContentContainer {
+  width: 80%;
   margin-left: 2rem;
   padding-top: 6rem;
   display: flex;
@@ -68,22 +82,292 @@
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  text-decoration: none;
 }
 
 .socialMediaContainer {
-  margin-top: 0.5rem;
+  margin: 1.2rem 0;
   display: flex;
   gap: 1.5rem;
+  list-style-type: none;
 }
 
 .socialMediaIcon:hover {
   fill: rgb(96, 112, 255);
 }
 
+.worksGridContainer {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 6rem;
+  border-radius: 10px;
+  margin: 6rem 10px;
+  padding: 10px;
+}
+
+.worksFlexContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid rgb(223, 225, 230);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.txtWrapper {
+  width: 80%;
+}
+
+.workImgContainer img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.workDetailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.projecTitle {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: rgb(23, 43, 77);
+}
+
+.canopyContainer {
+  display: flex;
+  gap: 1.5rem;
+  padding: 3px 0;
+}
+
+.canopyContainer h4 {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.projectOrderedList {
+  display: flex;
+  gap: 1.5rem;
+  list-style: disc;
+  color: rgb(122, 134, 154);
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.projectDetail {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.projectUnorderdList {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  margin: 0;
+}
+
+.projectUnorderdList li {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: rgb(235, 235, 255);
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: rgb(96, 112, 255);
+}
+
+.btnWrapper {
+  padding: 5px 0;
+}
+
+.btn-project {
+  border: 1px solid rgb(96, 112, 255);
+  border-radius: 8px;
+  padding: 12px;
+  color: rgb(96, 112, 255);
+  background-color: #fff;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.btn-project:hover {
+  background-color: #6070ff;
+  color: white;
+  transition: all ease 1s;
+}
+
+.btn-project:active {
+  background-color: hsl(235, 72%, 48%);
+  color: white;
+  transition: all ease 1s;
+}
+
+.aboutMainContainer {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+.mainList {
+  padding-top: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.categoryName {
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border {
+  border-bottom: solid rgb(229, 229, 229) 2px;
+}
+
+.subList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 5px;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.sublistContent {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  height: 66.72px;
+  border-radius: 8px;
+  background: rgb(247, 247, 249);
+  padding: 12px;
+}
+
+.sublistContent img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.contactMeMainContainer {
+  background-color: rgb(96, 112, 255);
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 80px 80px;
+  background-image: url(contact\ mg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 20px;
+}
+
+.contactContainer h2 {
+  padding-top: 5rem;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.contactContainer p {
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: rgb(235, 235, 255);
+}
+
+.contactContainer input {
+  width: 100%;
+  padding: 13px 20px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(207, 216, 220);
+  border-radius: 8px;
+  color: white;
+}
+
+.contactContainer textarea {
+  width: 100%;
+  height: 175px;
+  padding: 13px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(207, 216, 220);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  resize: none;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contactMeBtn {
+  padding: 0 20px;
+}
+
+.contactContainer textarea:focus input:focus {
+  outline: none;
+  border-color: rgb(127, 140, 255);
+}
+
 @media (min-width: 375px) {
   .heroMainContainer {
-    background-size: contain;
+    background-size: cover;
   }
 
   .contentContainer {
@@ -98,5 +382,6 @@
 
   .heroMainContainer {
     background-size: cover;
+    height: 100%;
   }
 }
