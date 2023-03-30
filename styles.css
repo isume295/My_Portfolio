@@ -293,6 +293,10 @@ body {
   border-radius: 50%;
 }
 
+.contactMainBackground {
+  background-color: white;
+}
+
 .contactMeMainContainer {
   background-color: rgb(96, 112, 255);
   width: 100%;
@@ -377,24 +381,16 @@ input:focus {
   border-color: rgb(127, 140, 255);
 }
 
-
-
-
-
 @media (min-width: 375px) {
   .heroMainContainer {
     /* height: 70%; */
     background-size: cover;
   }
 
-  
-
   .contentContainer {
     width: 70%;
   }
 }
-
-
 
 @media (min-width: 768px) {
   /* header section */
@@ -518,14 +514,81 @@ input:focus {
     display: inline;
   }/* about section */
 
-  .AboutContentContainer{
-    flex-direction: column;
+  .aboutMainContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top-right-radius: 80px 80px;
   }
-  
 
+  .AboutContentContainer {
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 5rem 5rem;
+    margin: 0;
+  }
 
+  .aboutTxtWrapper {
+    padding-top: 10px;
+    width: 40%;
+  }
 
+  .AboutContentContainer .headingTxt {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
 
+  .AboutContentContainer .paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
+  .mainList {
+    width: 50%;
+    padding-top: 0;
+  }
 
+  .subList {
+    flex-direction: row;
+  }
+
+  .sublistContent {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    height: auto;
+  }/* contact me section */
+
+  .contactMeMainContainer {
+    background-image: url(contact\ bg.svg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .contactContainer {
+    width: 50%;
+  }
+
+  .formContainer {
+    width: 35%;
+    align-items: center;
+  }
+
+  .formContainer input,
+  textarea {
+    border-radius: 2px;
+    height: 48px;
+  }
 }
