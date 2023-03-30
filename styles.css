@@ -383,7 +383,6 @@ input:focus {
 
 @media (min-width: 375px) {
   .heroMainContainer {
-    /* height: 70%; */
     background-size: cover;
   }
 
