@@ -32,7 +32,8 @@ body {
   margin-right: 2rem;
 }
 
-.navLinksContainer {
+.navLinksContainer,
+.mobileNone {
   display: none;
 }
 
@@ -378,6 +379,8 @@ input:focus {
 
 
 
+
+
 @media (min-width: 375px) {
   .heroMainContainer {
     /* height: 70%; */
@@ -459,8 +462,70 @@ input:focus {
     line-height: 28px;
   }/* work section */
 
+  .worksGridContainer {
+    margin: 6rem 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   .worksFlexContainer {
     flex-direction: row;
+    gap: 3rem;
   }
+
+  .workImgContainer img {
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .workDetailContainer {
+    width: 60%;
+  }
+
+  .projecTitle {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .canopyContainer {
+    gap: 2rem;
+  }
+
+  .canopyContainer h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .projectOrderedList {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .projectDetail {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .flexReverse {
+    flex-direction: row-reverse;
+    gap: 3rem;
+    padding-left: 3rem;
+  }
+
+  .mobileNone {
+    display: inline;
+  }/* about section */
+
+  .AboutContentContainer{
+    flex-direction: column;
+  }
+  
+
+
+
+
+
 
 }
