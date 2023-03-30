@@ -28,18 +28,23 @@ body {
   margin-left: 2rem;
 }
 
-.BurgerIcon {
+.burgerIcon {
   margin-right: 2rem;
+}
+
+.navLinksContainer {
+  display: none;
 }
 
 .heroMainContainer {
   margin: 0;
-  height: 75%;
+  height: auto;
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-image: url(mobile\ bg.png);
   background-repeat: no-repeat;
   background-size: contain;
+  border-bottom-left-radius: 80px 80px;
 }
 
 .contentContainer {
@@ -48,6 +53,7 @@ body {
   padding-top: 6rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .AboutContentContainer {
@@ -85,7 +91,7 @@ body {
 }
 
 .socialMediaContainer {
-  margin: 1.2rem 0;
+  margin: 1rem 0;
   display: flex;
   gap: 1.5rem;
   list-style-type: none;
@@ -370,23 +376,91 @@ input:focus {
   border-color: rgb(127, 140, 255);
 }
 
+
+
 @media (min-width: 375px) {
   .heroMainContainer {
+    /* height: 70%; */
     background-size: cover;
   }
+
+  
 
   .contentContainer {
     width: 70%;
   }
 }
 
+
+
 @media (min-width: 768px) {
-  .contentContainer {
-    width: 80%;
+  /* header section */
+  .burgerIcon {
+    display: none;
   }
 
-  .heroMainContainer {
-    background-size: cover;
-    height: 100%;
+  .logo {
+    margin-left: 4rem;
   }
+
+  .navLinksContainer {
+    display: flex;
+    gap: 1rem;
+    margin-right: 4rem;
+    list-style-type: none;
+  }
+
+  .navLinksContainer a {
+    font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .navLinksContainer a:hover {
+    color: rgb(96, 112, 255);
+  }
+
+  .headerContainer {
+    top: 0;
+    position: sticky;
+  }/* hero section */
+  .heroMainContainer {
+    background-image: url(Hero\ bg.svg);
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .contentContainer {
+    padding-top: 0;
+  }
+
+  .headingTxt {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    width: 48%;
+  }
+
+  .paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }/* work section */
+
+  .worksFlexContainer {
+    flex-direction: row;
+  }
+
 }
