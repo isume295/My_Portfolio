@@ -224,12 +224,13 @@ body {
   background-color: #6070ff;
   color: white;
   transition: all ease 1s;
+  scale: 0.1%;
 }
 
 .btn-project:active {
   background-color: hsl(235, 72%, 48%);
   color: white;
-  transition: all ease 1s;
+  transition: all ease 0.9s;
 }
 
 .aboutMainContainer {
