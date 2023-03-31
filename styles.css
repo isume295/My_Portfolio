@@ -224,7 +224,6 @@ body {
   background-color: #6070ff;
   color: white;
   transition: all ease 1s;
-  scale: 0.1%;
 }
 
 .btn-project:active {
