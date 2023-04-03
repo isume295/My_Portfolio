@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <h3><b>Hello_Microverse</b></h3>
+  <h3><b>My_Portfolio</b></h3>
 </div>
 
 # :green_book: Table of Contents
