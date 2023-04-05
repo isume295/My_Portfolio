@@ -42,7 +42,7 @@ body {
   height: auto;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  background-image: url(mobile\ bg.png);
+  background-image: url(image/mobile\ bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   border-bottom-left-radius: 80px 80px;
@@ -302,7 +302,7 @@ body {
   width: 100%;
   height: auto;
   border-top-left-radius: 80px 80px;
-  background-image: url(contact\ mg.png);
+  background-image: url(image/contact\ mg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right 100%;
@@ -427,7 +427,7 @@ input:focus {
     position: sticky;
   }/* hero section */
   .heroMainContainer {
-    background-image: url(Hero\ bg.svg);
+    background-image: url(image/Hero\ bg.svg);
     background-size: contain;
     background-position: center;
     height: 100%;
@@ -570,7 +570,7 @@ input:focus {
   }/* contact me section */
 
   .contactMeMainContainer {
-    background-image: url(contact\ bg.svg);
+    background-image: url(image/contact\ bg.svg);
     background-position: center;
     display: flex;
     align-items: center;
