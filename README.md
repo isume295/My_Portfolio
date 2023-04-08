@@ -21,6 +21,7 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [🙏 walkthrough](#walkthrough)
 - [:memo: License](#license)
 
 # :book: [My_Portfolio] <a name="about-project"></a>
@@ -163,6 +164,16 @@ If you like this project I would like to inform you that this project will impro
 I would like to thank Microverse for providing the necessary tools to complete this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- walkthrough -->
+
+##  Walkthrough <a name="walkthrough"></a>
+
+Feel free to check the [walkthrough video page](https://www.loom.com/share/e227c8afa0f24f719afc23a529d7f689).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- LICENSE -->
 
