@@ -392,6 +392,14 @@ input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.1s, opacity 0.5s;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-container {
