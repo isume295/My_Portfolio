@@ -2,16 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
   background-color: #f7f7f9;
-}/* header style */
+}
 
 .headerContainer {
   display: flex;
@@ -40,43 +35,7 @@ body {
 .navLinksContainer,
 .mobileNone {
   display: none;
-}/* mobile menu activation style  */
-
-.nav-mobile {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transition: all ease 0.1s;
-  background-color: rgba(96, 112, 255, 0.8);
-  backdrop-filter: blur(5px);
-  align-items: normal;
-  padding-top: 22.3px;
 }
-
-.nav-mobile .logo {
-  filter: blur(2px);
-}
-
-.nav-mobile .navLinksContainer {
-  padding-top: 2rem;
-  position: absolute;
-  right: 57%;
-  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  list-style: none;
-  display: block;
-}
-
-.nav-mobile .navLinksContainer .list {
-  padding-bottom: 10px;
-}
-
-.nav-mobile .navLinksContainer a {
-  color: rgb(255, 255, 255);
-}/* hero section style */
 
 .heroMainContainer {
   margin: 0;
@@ -85,8 +44,7 @@ body {
   background-color: rgb(255, 255, 255);
   background-image: url(image/mobile\ bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 8rem;
+  background-size: contain;
   border-bottom-left-radius: 80px 80px;
 }
 
@@ -423,6 +381,32 @@ input:focus {
   border-color: rgb(127, 140, 255);
 }
 
+.modal-main-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(193, 199, 208, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 90%;
+  height: 85%;
+  border: 1px solid rgb(223, 225, 230);
+  padding: 16px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 375px) {
   .heroMainContainer {
     background-size: cover;
@@ -498,10 +482,6 @@ input:focus {
     font-size: 20px;
     line-height: 28px;
   }/* work section */
-
-  .p-top {
-    padding-top: 10px;
-  }
 
   .worksGridContainer {
     margin: 6rem 6rem;
