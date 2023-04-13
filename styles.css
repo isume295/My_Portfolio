@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -701,21 +705,37 @@ input:focus {
   }
 
   .modal-container {
-    width: 95%;
+    width: 80%;
     height: 95%;
+    overflow-y: scroll;
   }
 
   .modal-img {
-    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-img img {
     width: 100%;
-    height: 100%;
-    padding-bottom: 15px;
+    height: 95%;
   }
 
-  .modal-container .worr img {
-    width: 70%;
+  .modal-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .txt-width {
+    width: 59%;
+  }
+
+  .btn-project {
+    gap: 0;
+  }
+
+  .btn {
+    width: 100%;
   }
 }

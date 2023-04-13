@@ -43,7 +43,7 @@ const projects = [
     name: 'Multi-Post Stories',
     subHeading: 'CANOPY',
     image: 'image/work2.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['html', 'css', 'ruby', 'javaScript'],
     detail: ['Full Stack Dev', '2015'],
     demo: 'https://isume295.github.io/My_Portfolio/',
@@ -53,7 +53,7 @@ const projects = [
     name: 'Facebook 360',
     subHeading: 'CANOPY',
     image: 'image/work3.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['html', 'css', 'ruby', 'javaScript'],
     detail: ['Back End Dev', '2015'],
     demo: 'https://isume295.github.io/My_Portfolio/',
@@ -125,7 +125,8 @@ const modal = document.querySelector('.modal-main-container');
 seeProjectBtn.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     modalDiv.innerHTML = `
-  <div class="modal-container">
+    
+    <div class="modal-container">
     <div class="close-btn">
       <h3 class="projecTitle">${projects[index].name}</h3>
       <img src="image/close.svg" alt=""> 
@@ -142,7 +143,7 @@ seeProjectBtn.forEach((btn, index) => {
     </div>
     <div>
     <div class="modal-detail">
-      <p class="projectDetail">${projects[index].description}</p>
+    <p class="projectDetail txt-width">${projects[index].description}</p>
      
     <div class="modal-btn-container">
       <ul class="projectUnorderdList">
@@ -161,7 +162,8 @@ seeProjectBtn.forEach((btn, index) => {
     
 
   </div>
-`;
+     
+    `;
 
     modal.classList.toggle('active');
     const modalCloseBtn = document.querySelector('.modal-main-container .close-btn img');
