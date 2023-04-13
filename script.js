@@ -179,7 +179,6 @@ const emailError = document.querySelector('.error');
 
 if (form) {
   form.addEventListener('submit', (event) => {
-
     const validEmail = email.value.toLowerCase();
     emailError.textContent = '';
     if (email.value !== validEmail) {
