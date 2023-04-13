@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #f7f7f9;
 }
@@ -35,6 +39,42 @@ body {
 .navLinksContainer,
 .mobileNone {
   display: none;
+}/* mobile menu activation style  */
+
+.nav-mobile {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all ease 0.1s;
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(5px);
+  align-items: normal;
+  padding-top: 22.3px;
+}
+
+.nav-mobile .logo {
+  filter: blur(2px);
+}
+
+.nav-mobile .navLinksContainer {
+  padding-top: 2rem;
+  position: absolute;
+  right: 57%;
+  font-family: 'Poppins', 'Arial', 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  list-style: none;
+  display: block;
+}
+
+.nav-mobile .navLinksContainer .list {
+  padding-bottom: 10px;
+}
+
+.nav-mobile .navLinksContainer a {
+  color: rgb(255, 255, 255);
 }
 
 .heroMainContainer {
@@ -127,6 +167,12 @@ body {
 }
 
 .workImgContainer img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+
+.modal-img img {
   width: 100%;
   height: auto;
   padding-bottom: 15px;
@@ -395,6 +441,7 @@ input:focus {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.1s, opacity 0.5s;
+  overflow: scroll;
 }
 
 .active {
@@ -403,16 +450,45 @@ input:focus {
 }
 
 .modal-container {
-  width: 90%;
-  height: 85%;
+  width: 93%;
+  height: auto;
   border: 1px solid rgb(223, 225, 230);
-  padding: 16px;
+  padding: 10px;
   border-radius: 16px;
   background-color: rgb(255, 255, 255);
-  position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-container .btn {
+  margin-top: 20px;
+  border-top: 1px solid hsl(228, 14%, 93%);
+}
+
+.modal-btn {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-link {
+  color: rgb(57, 109, 242);
 }
 
 @media (min-width: 375px) {
@@ -623,5 +699,24 @@ input:focus {
   textarea {
     border-radius: 2px;
     height: 48px;
+  }
+
+  .modal-container {
+    width: 95%;
+    height: 95%;
+  }
+
+  .modal-img {
+    height: 45%;
+  }
+
+  .modal-img img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
+  }
+
+  .modal-container .worr img {
+    width: 70%;
   }
 }
