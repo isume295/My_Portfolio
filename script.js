@@ -187,3 +187,25 @@ form.addEventListener('submit', (event) => {
     emailError.style.color = 'white';
   }
 });
+
+const inputName = document.querySelector('#name');
+const inputMessage = document.querySelector('#message');
+const savedData = localStorage.getItem('contact-data');
+const formData = savedData ? JSON.parse(savedData) : {};
+
+const saveFormData = () => {
+  localStorage.setItem('contact-data', JSON.stringify(formData));
+};
+
+inputName.addEventListener('input', () => {
+  formData.name = inputName.value;
+  saveFormData();
+});
+
+inputMessage.addEventListener('input', () => {
+  formData.message = inputMessage.value;
+  saveFormData();
+});
+
+inputName.value = formData.name || '';
+inputMessage.value = formData.message || '';
