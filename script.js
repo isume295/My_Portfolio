@@ -188,6 +188,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+const inputEmail = document.querySelector('#email')
 const inputName = document.querySelector('#name');
 const inputMessage = document.querySelector('#message');
 const savedData = localStorage.getItem('contact-data');
@@ -207,5 +208,11 @@ inputMessage.addEventListener('input', () => {
   saveFormData();
 });
 
+inputEmail.addEventListener('input', () => {
+  formData.email = inputEmail.value;
+  saveFormData();
+});
+
 inputName.value = formData.name || '';
 inputMessage.value = formData.message || '';
+inputEmail.value = formData.email || '';
