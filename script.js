@@ -172,3 +172,22 @@ seeProjectBtn.forEach((btn, index) => {
     });
   });
 });
+
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+const emailError = document.querySelector('.error');
+
+if (form) {
+  form.addEventListener('submit', (event) => {
+    const validEmail = email.value.toLowerCase();
+    emailError.textContent = '';
+    if (email.value !== validEmail) {
+      event.preventDefault();
+      const message = document.createTextNode('Email Must be lowercase');
+      emailError.appendChild(message);
+      emailError.style.color = 'red';
+      return false;
+    }
+    return true;
+  });
+}
