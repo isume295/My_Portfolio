@@ -188,7 +188,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const inputEmail = document.querySelector('#email')
+const inputEmail = document.querySelector('#email');
 const inputName = document.querySelector('#name');
 const inputMessage = document.querySelector('#message');
 const savedData = localStorage.getItem('contact-data');
