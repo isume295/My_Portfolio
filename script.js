@@ -32,12 +32,12 @@ const projects = [
   {
     name: 'Tonix',
     subHeading: 'CANOPY',
-    image: 'image/work1.png',
+    image: 'image/pro1.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     technologies: ['html', 'css', 'ruby', 'javaScript'],
     detail: ['Back End Dev', '2015'],
-    demo: 'https://isume295.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/isume295/My_Portfolio',
+    demo: 'https://isume295.github.io/capstone-1/',
+    sourceCode: 'https://github.com/isume295/capstone-1',
   },
   {
     name: 'Multi-Post Stories',
