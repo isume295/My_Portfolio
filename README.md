@@ -169,7 +169,7 @@ I would like to thank Microverse for providing the necessary tools to complete t
 
 ##  Walkthrough <a name="walkthrough"></a>
 
-Feel free to check the [walkthrough video page](https://www.loom.com/share/e227c8afa0f24f719afc23a529d7f689).
+Feel free to check the [walkthrough video page](https://www.loom.com/share/e227c8afa0f24f719afc23a529d7f6895).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
