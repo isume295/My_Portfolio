@@ -30,44 +30,44 @@ links.forEach((link) => {
 
 const projects = [
   {
-    name: 'Tonix',
-    subHeading: 'CANOPY',
-    image: 'image/pro1.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'ruby', 'javaScript'],
-    detail: ['Back End Dev', '2015'],
-    demo: 'https://isume295.github.io/capstone-1/',
-    sourceCode: 'https://github.com/isume295/capstone-1',
+    name: 'harley-davidson',
+    subHeading: 'MOTORS',
+    image: 'image/p1.png',
+    description: 'Harley-Davidson Motor Reservation Website is a robust and user-friendly online platform built using Ruby on Rails and React Redux. It serves as a centralized hub for users to explore, view, and reserve motorcycles effortlessly. With a seamless integration of these powerful technologies, the website offers a smooth and engaging experience for both motorcycle enthusiasts and rental providers.',
+    technologies: ['React/Redux', 'Tailwind', 'ruby on rails', 'Postgres'],
+    detail: ['Full Stack Dev', '2023'],
+    demo: 'https://harley-davidson-73po.onrender.com/',
+    sourceCode: 'https://github.com/Salimer/Final-Capstone-Front-End',
   },
   {
-    name: 'Multi-Post Stories',
-    subHeading: 'CANOPY',
-    image: 'image/work2.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'ruby', 'javaScript'],
-    detail: ['Full Stack Dev', '2015'],
-    demo: 'https://isume295.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/isume295/My_Portfolio',
+    name: 'Comment Dish',
+    subHeading: 'SHARE YOUR THOUGHTS',
+    image: 'image/c1.png',
+    description: 'Collaborative development utalizing external api for the ultimate food sharing and commenting platform. this platform helps in building a vibrant community hub for exploring, liking, and discussing meals.',
+    technologies: ['html', 'css', 'scss', 'javaScript'],
+    detail: ['Front End Dev', '2023'],
+    demo: 'https://salimer.github.io/COMMENTDISH-project/dist/',
+    sourceCode: 'https://github.com/Salimer/COMMENTDISH-project',
   },
   {
-    name: 'Facebook 360',
-    subHeading: 'CANOPY',
-    image: 'image/work3.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'ruby', 'javaScript'],
-    detail: ['Back End Dev', '2015'],
-    demo: 'https://isume295.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/isume295/My_Portfolio',
+    name: 'Space Travelers Hub',
+    subHeading: 'RESERVE YOUR ROCKET',
+    image: 'image/s-1.png',
+    description: 'The Rocket Reservation Website is an innovative online platform that offers users the ability to reserve rockets and view existing reservations. This project is built using React Redux, a powerful JavaScript library for building user interfaces, and it integrates with an external API to provide real-time rocket availability and booking information. Developed collaboratively, this website showcases the collective efforts of a team dedicated to creating an exceptional user experience.',
+    technologies: ['React', 'Redux', 'css', 'API'],
+    detail: ['Front End Dev', '2023'],
+    demo: 'https://space-traverler-hub-1.vercel.app/',
+    sourceCode: 'https://github.com/Nasirkhan294/space-traverler-hub',
   },
   {
-    name: 'Uber Navigation',
-    subHeading: 'CANOPY',
-    image: 'image/work4.png',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    technologies: ['html', 'css', 'ruby', 'javaScript'],
-    detail: ['Back End Dev', '2015'],
-    demo: 'https://isume295.github.io/My_Portfolio/',
-    sourceCode: 'https://github.com/isume295/My_Portfolio',
+    name: 'My Budget',
+    subHeading: 'CONTROL YOUR FINANCES',
+    image: 'image/b-1.png',
+    description: 'Take control of your finances with our powerful budget app built with Ruby on Rails and backed by a robust PostgreSQL database. Seamlessly track your income, expenses, and savings goals with a user-friendly interface. Leverage the scalability and reliability of Ruby on Rails to ensure smooth performance and secure data storage. With our app, you can confidently manage your finances, analyze spending patterns, and make informed financial decisions.',
+    technologies: ['rspec', 'CSS', 'ruby on rails', 'Postgres'],
+    detail: ['Full Stack Dev', '2023'],
+    demo: 'https://budget-app-1n0j.onrender.com/',
+    sourceCode: 'https://github.com/isume295/Budget-app',
   },
 ];
 
@@ -93,7 +93,7 @@ div.innerHTML = projects.reduce((output, project) => (
   <li>${project.detail[1]}</li>
  </ol>
  </div>
- <p class="projectDetail txtWrapper">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+ <p class="projectDetail txtWrapper">${project.description.split(' ').slice(0, 20).join(' ')} .......</p>
  <ul class="projectUnorderdList">
   <li>${project.technologies[0]}</li>
   <li class="mobileNone">${project.technologies[1]}</li>
@@ -154,8 +154,8 @@ seeProjectBtn.forEach((btn, index) => {
       </ul>
       <div class="btn">
         <div class="btnWrapper modal-btn">
-          <button class="btn-project"><a class="live project-link" href="">See live</a><img src="image/live.svg" alt=""></button>
-          <button class="btn-project"><a class="source project-link" href="">See source</a><img src="image/source.svg" alt=""></button>
+          <button class="btn-project"><a class="live project-link" href=${projects[index].demo}>See live</a><img src="image/live.svg" alt=""></button>
+          <button class="btn-project"><a class="source project-link" href=${projects[index].sourceCode}>See source</a><img src="image/source.svg" alt=""></button>
          </div>
       </div>
     </div>
@@ -216,3 +216,23 @@ inputEmail.addEventListener('input', () => {
 inputName.value = formData.name || '';
 inputMessage.value = formData.message || '';
 inputEmail.value = formData.email || '';
+
+function toggleContent(id, type) {
+  const content = document.getElementById(id);
+  const img = document.querySelector(`.${type} img`);
+  const div = document.querySelector(`.${type}`);
+
+  if (content.style.display === 'none') {
+    content.style.display = 'flex';
+    div.classList.remove('border');
+    img.src = 'image/Union2.svg'; // Set the src attribute of the image to the desired path
+  } else {
+    content.style.display = 'none';
+    img.src = 'image/Union.svg';
+    div.classList.add('border');
+  }
+}
+
+if (0 > 1) {
+  toggleContent();
+}

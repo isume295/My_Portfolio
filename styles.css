@@ -456,7 +456,7 @@ input:focus {
   width: 93%;
   height: auto;
   border: 1px solid rgb(223, 225, 230);
-  padding: 10px;
+  padding: 25px;
   border-radius: 16px;
   background-color: rgb(255, 255, 255);
   top: 0;
@@ -735,7 +735,24 @@ input:focus {
     gap: 0;
   }
 
+  .btn-project a:hover {
+    color: #fff;
+    transition: all ease 1s;
+  }
+
   .btn {
     width: 100%;
   }
+}
+
+#languageContent {
+  display: flex;
+}
+
+#frameworkContent {
+  display: none;
+}
+
+#skillContent {
+  display: none;
 }
