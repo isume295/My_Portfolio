@@ -28,6 +28,7 @@ links.forEach((link) => {
   });
 });
 
+// datas for the project/works section
 const projects = [
   {
     name: 'harley-davidson',
@@ -71,6 +72,7 @@ const projects = [
   },
 ];
 
+// synamically create the project/works section
 const workPage = document.getElementById('works');
 const div = document.createElement('div');
 div.className = 'worksGridContainer';
@@ -154,8 +156,8 @@ seeProjectBtn.forEach((btn, index) => {
       </ul>
       <div class="btn">
         <div class="btnWrapper modal-btn">
-          <button class="btn-project"><a class="live project-link" href=${projects[index].demo}>See live</a><img src="image/live.svg" alt=""></button>
-          <button class="btn-project"><a class="source project-link" href=${projects[index].sourceCode}>See source</a><img src="image/source.svg" alt=""></button>
+          <button class="btn-project"><a class="live project-link" href=${projects[index].demo} target="_blank">See live</a><img src="image/live.svg" alt=""></button>
+          <button class="btn-project"><a class="source project-link" href=${projects[index].sourceCode} target="_blank">See source</a><img src="image/source.svg" alt=""></button>
          </div>
       </div>
     </div>
