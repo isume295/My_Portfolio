@@ -41,6 +41,16 @@ const projects = [
     sourceCode: 'https://github.com/Salimer/Final-Capstone-Front-End',
   },
   {
+    name: 'Ethio Tech',
+    subHeading: 'EMOPOWERING INNOVATION',
+    image: 'image/b-2.png',
+    description: 'Ethio Tech is a dynamic and forward-thinking technology company that is revolutionizing industries through innovative solutions. With a diverse team of talented professionals, we combine cutting-edge technologies, strategic thinking, and creative expertise to deliver transformative results.',
+    technologies: ['React', 'Redux', 'Express', 'Postgres'],
+    detail: ['Full Stack Dev', '2023'],
+    demo: 'https://eat-k84f.onrender.com/',
+    sourceCode: 'https://github.com/isume295/ethio-tech-addis',
+  },
+  {
     name: 'Comment Dish',
     subHeading: 'SHARE YOUR THOUGHTS',
     image: 'image/c1.png',
@@ -59,16 +69,6 @@ const projects = [
     detail: ['Front End Dev', '2023'],
     demo: 'https://space-traverler-hub-1.vercel.app/',
     sourceCode: 'https://github.com/Nasirkhan294/space-traverler-hub',
-  },
-  {
-    name: 'My Budget',
-    subHeading: 'CONTROL YOUR FINANCES',
-    image: 'image/b-1.png',
-    description: 'Take control of your finances with our powerful budget app built with Ruby on Rails and backed by a robust PostgreSQL database. Seamlessly track your income, expenses, and savings goals with a user-friendly interface. Leverage the scalability and reliability of Ruby on Rails to ensure smooth performance and secure data storage. With our app, you can confidently manage your finances, analyze spending patterns, and make informed financial decisions.',
-    technologies: ['rspec', 'CSS', 'ruby on rails', 'Postgres'],
-    detail: ['Full Stack Dev', '2023'],
-    demo: 'https://budget-app-1n0j.onrender.com/',
-    sourceCode: 'https://github.com/isume295/Budget-app',
   },
 ];
 
